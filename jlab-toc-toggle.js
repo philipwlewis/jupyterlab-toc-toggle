@@ -1,7 +1,7 @@
     var code_toggle_added = false;
     $(function() { 
     if ( code_toggle_added == false) {
-        $(".CodeMirror pre").each(function(){
+        $(".CodeMirror pre, .jp-CodeMirrorEditor pre").each(function(){
             var $pre = $(this);
             $("<button style='float:right;'></button>").click(function(){
                 $pre.toggle();
